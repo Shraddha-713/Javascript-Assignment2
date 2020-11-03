@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sorting Array</title>
+	</head>
+	<body>
+		<script>
+			var arr = [3, 8, 7, 6, 5, -4, -3, 2, 1];
+			for(var i = 0; i <= arr.length - 1; i++) {
+				for(var j = 0; j <= arr.length - 1; j++) {
+					if(arr[i] < arr[j]) {
+						var temp = arr[i];
+						arr[i] = arr[j];
+						arr[j] = temp;
+					}
+				}
+			}
+			document.write("Sorted Array- <br>");
+			for(var i = 0; i <= arr.length - 1; i++) {
+				document.write(arr[i] +" ");
+			}
+		</script>
+	</body>
+</html>
