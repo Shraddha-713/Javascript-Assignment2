@@ -3,23 +3,28 @@
 	<head>
 	</head>
 	<body>
-		Enter First Date-<input id="date1" type="date"><br><br>
-		Enter Second Date-<input id="date2" type="date"><br><br>
-		<button onclick="fun()">Get Date</button>
 	</body>
 	<script type = "text/javascript" > 
-	
-		function fun() {
-			const date1 = document.getElementById('date1').value;
-			const date2 = document.getElementById('date2').value;
-			const Difference_In_Time = date2 - date1; 
+			const date1 = new Date("2014-04-02");
+			const date2 = new Date("2014-11-04");
+			const date3 = new Date("2014-12-02");
+			const date4 = new Date("2014-11-04");
+			<!--const date2 = document.getElementById('date2').value;-->
+			const Difference_In_Time1 = date2 - date1; 
+			const Difference_In_Time2 = date4 - date3; 
 				  
-			const Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24); 
+			const Difference_In_Days1 = Difference_In_Time1 / (1000 * 3600 * 24); 
+			const Difference_In_Days2= Difference_In_Time2 / (1000 * 3600 * 24); 
 				  
-			alert("Total number of days between dates "
+			console.log("Total number of days between dates "
 						   + date1 + " and " 
 						   + date2 + " is: " 
-						   + Difference_In_Days);
-		}
+						   + Difference_In_Days1
+						   + " days.");
+			console.log("Total number of days between dates "
+						   + date3 + " and " 
+						   + date4 + " is: " 
+						   + Difference_In_Days2
+						   + " days.");
 	</script> 
 </html>
