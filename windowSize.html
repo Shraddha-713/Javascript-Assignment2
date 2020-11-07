@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<title>Size of window</title>
+	</head>
+		
+	<body onload="size()" onresize="size()">
+		<h1 id="text"> 
+		</h1>
+	</body>
+	<script>
+		function size() {
+			var w = document.documentElement.clientWidth;
+			var h = document.documentElement.clientHeight;
+			document.getElementById('text').innerHTML = "<h1>Width: " + w + " and Height: " + h + "</h1>";
+		}
+	</script>
+</html>
